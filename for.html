@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        
+        <meta charset="UTF-8">
+        <title>Estruturas de Repetição</title>
+
+        <script>
+
+            const X = prompt("Quantas notas")
+            let nota = 0 
+            let soma = 0
+
+            for( let i = 1; i <= X; i++ ){
+                nota = Number(prompt("Digite a nota " + i))
+                soma = soma + nota                  
+            }
+
+            const media = soma / X
+            console.log("A sua nota é " + soma)
+            console.log("A sua média é " + media)
+
+        </script>
+
+    </head>
+    
+    
+    <body></body>
+    
+</html>

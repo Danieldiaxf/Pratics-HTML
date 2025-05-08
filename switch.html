@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Estruturas de Condição</title>
+
+    <script>
+
+        /*
+          Verificar o aumento de salário de acordo com os seguintes cargos:
+          Estagiário -> 100%
+          Analista -> 50%
+          Gerente -> 30%
+          Presidente -> 10%
+        */
+
+      let salário = Number(prompt("Por favor, insira o valor do seu salário!"))
+      const cargo = prompt("Qual é o seu cargo?")
+      let aumento = 0
+
+        switch(cargo) {
+          case "Estagiário":  aumento = 2.0; break;
+          case "Analista":    aumento = 1.5; break;
+          case "Gerente":     aumento = 1.3; break;
+          case "Presidente":  aumento = 1.1; break;
+          default: alert("Por favor, digite um cargo existente")
+      }
+      
+      const novoSalário = salário * aumento
+
+      console.log("Seu novo salário é: R$" + novoSalário)
+
+    </script> 
+
+</head>
+
+<body>
+
+</body>
+
+</html> 

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <meta charset="UTF-8">
+    <title>Mario</title>
+
+    <script>
+
+        var altura, linha, coluna, espaço
+
+        do {
+            altura = prompt("Digite a altura")
+        } while (altura > 8 || altura < 1);
+
+        for( linha = 0; linha < altura; linha++){
+            for(espaço = 0; espaço < altura - linha - 1; espaço++ ){
+                innerHTML(" ")
+            }
+            for(coluna = 0; coluna <= altura; coluna++ ){
+                innerHTML("#")
+            }
+            innerHTML("\n")
+        }
+
+
+    </script>
+
+</head>
+<body>
+    <div id="#">#</div>
+</body>
+</html>

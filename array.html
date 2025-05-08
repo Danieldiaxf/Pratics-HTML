@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+            <meta charset="UTF-8">
+            <title>Arrays</title>
+        
+        <script>
+
+
+            const carros = [ "Gol", "Fusca", "Virtus", "ka" ]
+            
+            // Adicionar Indices ao Final do Array
+            carros.push( "Fiesta" ) 
+            
+            // Adicionar Indices ao Final do Array
+            carros.unshift( "Palio" )
+
+            console.table( carros )
+
+            // Remover Indices do Final
+            carros.pop()
+            
+            // Remover Indices do Começo
+            carros.shift()
+           
+            // Exclui um Item de um Array em um Determinada Cordenada
+            carros.splice( 1,1 )
+             
+            // Remove um Indice Para Adicionar Outro Indice no Lugar
+            carros.splice( 1, 1, "Uno" )
+            
+            console.table( carros )
+            
+
+        </script> 
+        
+    </head>
+    
+    <body></body>
+</html>
